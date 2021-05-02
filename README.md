@@ -2,7 +2,7 @@
 ## Author
   **FRANCIS MAKONJIO**
 ## Screenshot
- ![](images/delanihome.png)
+ ![](images/home.png)
 ## Description
 This is a website that tests students knowledge on *JAVASCRIPT*:
         1.  >Has questions that must be answered
