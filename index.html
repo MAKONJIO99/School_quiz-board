@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Original+Surfer&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width user-scalable=no">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+      <div class="container">
+        <div class="row">
+          <div class="neons col-12">
+             <h1><em>The Javascript test!!</em></h1>
+          </div>
+      <center id="tt">
+        <form id="name">
+          <p id="medium" class="text-muted col-md-12">Enter your name please.</p>
+          <input type="text" id="firstName" class="form-control col-9" name="" value="" placeholder="Your Name" autofocus required><br>
+          <p id="medium" class="text-muted col-md-12">Enter the name of your school please</p>
+          <input type="text" id="schoolName" class="form-control col-9" name="" value="" placeholder="Your School Name" required><br>
+          <button type="submit" class="btn btn-info" onclick="set()" name="button">Continue</button>
+        </form>
+        <div id="begin">
+          <p id="seen" class="text-muted col-md-8"> <span id="person"></span> how well do you know Javascript?<span id="school"></span> wishes to test your prowess in javascript</p>
+          <p class="holder">
+            <button type="button" id="start" class="btn btn-success" name="button">Begin Test</button>
+          </p>
+        </div>
+        </center>
+      </div>
+  <div class="container">
+    <div id="questions">
+        <div class="form-group">
+          <form id="quiz">
+            <h2>Please Answer the questions below</h2>
+            <!--Question 1-->
+            <label for="Q1">which of the files below is a javascript file ? <strong>(10mks)</strong></label><br>
+            <input type="radio" name="Q1" value="0" required>script.css <br>
+            <input type="radio" name="Q1" value="10">script.js <br>
+            <!--Question 2-->
+            <label for="Q2">Which of the following operators will show you a remainder of a number when divided <strong>(10mks)</strong></label><br>
+            <input type="radio" name="Q2" value="0" required>=== <br>
+            <input type="radio" name="Q2" value="10">% <br>
+            <!--Question 3-->
+            <label for="Q3">What inbuilt function do you use to change a string into a number? <strong>(10mks)</strong></label><br>
+            <input type="radio" name="Q3" value="10" required>parseInt()<br>
+            <input type="radio" name="Q3" value="0">Console.log() <br>
+            <!--Question 4-->
+            <label for="Q4">How do you set a constant in Javascript? <strong>(10mks)</strong></label><br>
+            <input type="radio" name="Q4" value="10" required>const <br>
+            <input type="radio" name="Q4" value="0">var <br>
+            <!--Question 5-->
+            <label for="Q5">Which one is  used to show a pop-up box? <strong>(10mks)</strong></label><br>
+            <input type="radio" name="Q5" value="0" required>Console.log()<br>
+            <input type="radio" name="Q5" value="10"> Alert()<br>
+            <!--Question 6-->
+            <label for="Q6">What will this operation output as results? <br>
+                                    9 + "9" <strong>(10mks)</strong></label><br>
+            <input type="radio" name="Q6" value="10" required>99<br>
+            <input type="radio" name="Q6" value="0">19 <br>
+            <button type="submit" class="btn btn-info" name="button">Submit</button>
+          </form>
+        </div>
+      </div>
+          <center>
+          <div id="hide">
+            <div id="results"><h1></h1></div>
+            <button type="button" id="seeResults" class="btn btn-success" name="button">See Answers</button>
+          </div>
+        </center>
+      </div>
+      <div class="container">
+          <div id="answers">
+            <div class="form-group">
+              <form id=>
+                <h4>Answers</h4>
+                <!--Question 1-->
+                <label for="Q1">which of the files below is a javascript file ?<strong>(10mks)</strong></label><br>
+                <input type="radio" name="Q1" value="0" disabled>script.css <br>
+                <p class="text-success">
+                  <input type="radio" name="Q1" value="10" checked>script.js
+                </p>
+                <!--Question 2-->
+                <label for="Q2">Which of the following operators will show you a remainder of a number when divided <strong>(10mks)</strong></label><br>
+                <input type="radio" name="Q2" value="0" disabled>=== <br>
+                <p class="text-success">
+                <input type="radio" name="Q2" value="10" checked>%
+              </p>
+                <!--Question 3-->
+                <label for="Q3">What inbuilt function do you use to change a string into a number? <strong>(10mks)</strong></label><br>
+                <p class="text-success">
+                <input type="radio" name="Q3" value="10" checked>parseInt()
+              </p>
+                <input type="radio" name="Q3" value="0" disabled>Console.log() <br>
+                <!--Question 4-->
+                <label for="Q4">How do you set a constant in Javascript? <strong>(10mks)</strong></label><br>
+                <p class="text-success">
+                <input type="radio" name="Q4" value="10" checked>const
+              </p>
+                <input type="radio" name="Q4" value="0" disabled>var <br>
+                <!--Question 5-->
+                <label for="Q5">Which one is used to show a pop-up box? <strong>(10mks)</strong></label><br>
+                <input type="radio" name="Q5" value="0" disabled>Console.log()<br>
+                <p class="text-success">
+                <input type="radio" name="Q5" value="10" checked>Alert()
+              </p>
+                <!--Question 6-->
+                <label for="Q6">What will this operation output as results? <br>
+                  9 + "9" <strong>(10mks)</strong></label><br>
+                <p class="text-success">
+                <input type="radio" name="Q6" value="10" checked>99
+              </p>
+                <input type="radio" name="Q6" value="0" disabled>18 <br>
+              </form>
+              <div class="neons col-12">
+                <h3><em>The Javascript test!!</em></h3>
+             </div>
+              <center>
+          </div>
+        </div>
+      </div>
+    <script   src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script type="text/javascript" src="js/scripts.js">
+    </script>
+    <footer>
+      <p>Makonjio Creations</p>
+      <p>2021</p>
+      <p>All rights reserved. </p>
+    </footer>
+  </body>
+</html>

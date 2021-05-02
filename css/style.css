@@ -1,0 +1,52 @@
+body{
+    background-color: yellow;
+    font-family: 'Original Surfer', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+#hide,#quiz,#answers,#begin{
+    display: none;
+}
+.text-info{
+text-align: center;
+}
+
+ 
+ .neons,footer {
+    margin-top: 10rem;
+    text-align: center;
+ }
+ 
+ .neons h1 {
+   font-size: 9rem;
+   text-align: center;
+    font-weight: bold;
+   -webkit-animation: glow 2s ease-in-out infinite alternate;
+   -moz-animation: glow 2s ease-in-out infinite alternate;
+   animation: glow 2s ease-in-out infinite alternate;
+ }
+ 
+ @-webkit-keyframes glow {
+      from {
+       color: #fff;
+     text-shadow: 0 0 10px #00fff2, 0 0 20px #00fff2, 0 0 30px #00fff2, 0 0 40px #00fff2, 0 0 50px #00fff2, 0 0 60px #00fff2, 0 0 70px #00fff2, 0 0 90px #00fff2;
+   }
+   
+   to {
+      color: gray;
+     text-shadow: 0 0 20px #00fff2, 0 0 30px #00fff2, 0 0 40px #00fff2, 0 0 50px #00fff2, 0 0 60px #00fff2, 0 0 70px #00fff2, 0 0 80px #00fff2, 0 1 90px #00fff2;
+   }
+ }
+ footer {
+    position:fixed;
+    bottom:0px;
+    left:0;
+    width:100%;
+    height: 100px;
+    background-color: #D0DAEE;
+    
+
+  }
