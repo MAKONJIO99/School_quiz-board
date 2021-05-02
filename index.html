@@ -25,7 +25,7 @@
           <button type="submit" class="btn btn-info" onclick="set()" name="button">Continue</button>
         </form>
         <div id="begin">
-          <h2 id="seen" class="text-muted col-md-8"> <span id="person"></span> how well do you know Javascript?<span id="school"></span> wishes to test your prowess in javascript</h2>
+          <h2 id="seen" class="text-muted col-md-8"> <span id="person"></span> how well do you know Javascript?<span id="school"></span> wishes to test your prowess in javascript</h2><br>
           <h2 class="holder">
             <button type="button" id="start" class="btn btn-success" name="button">Begin Test &#8595;</button>
           </h2>
@@ -66,12 +66,20 @@
           </form>
         </div>
       </div>
-          <center>
-          <div id="hide">
-            <div id="results"><h1></h1></div>
-            <button type="button" id="seeResults" class="btn btn-success" name="button">See Answers</button>
-          </div>
-        </center>
+      <center>
+            
+        <div id="hide">
+              <h1 style="animation: infinite;border: solid black;background-color:#fff ;height: 100px;">
+              <div id="results"></div>
+            </h1>
+          <button type="button" id="seeResults" class="btn btn-success" name="button">See Answers</button>
+        </div>
+      </center>
+      <div class="mouse-click"></div>
+      
+        <img style="align-items: center;" src="/mouse_click.png" alt=" mouse_click" id="mouse-click"/>
+      
+          
       </div>
       <div class="container">
           <div id="answers">
@@ -126,10 +134,6 @@
     <script   src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <script type="text/javascript" src="js/scripts.js">
     </script>
-    <footer>
-      <p>Makonjio Creations</p>
-      <p>2021</p>
-      <p>All rights reserved. </p>
-    </footer>
+    
   </body>
 </html>
