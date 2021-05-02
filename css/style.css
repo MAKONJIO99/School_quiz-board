@@ -15,10 +15,17 @@ text-align: center;
 }
 
  
- .neons,footer {
+ .neons {
     margin-top: 10rem;
     text-align: center;
  }
+ #start {
+  font-size: 4rem;
+  text-align: center;
+  -webkit-animation: glow 2s ease-in-out infinite alternate;
+  -moz-animation: glow 2s ease-in-out infinite alternate;
+  animation: glow 2s ease-in-out infinite alternate;
+}
  
  .neons h1 {
    font-size: 9rem;
@@ -27,6 +34,13 @@ text-align: center;
    -webkit-animation: glow 2s ease-in-out infinite alternate;
    -moz-animation: glow 2s ease-in-out infinite alternate;
    animation: glow 2s ease-in-out infinite alternate;
+ }
+ .neons h3 {
+    font-size: 4rem;
+    text-align: center;
+    -webkit-animation: glow 2s ease-in-out infinite alternate;
+    -moz-animation: glow 2s ease-in-out infinite alternate;
+    animation: glow 2s ease-in-out infinite alternate;
  }
  
  @-webkit-keyframes glow {
@@ -65,3 +79,5 @@ text-align: center;
   60% {
     transform: translateY(-45px);
   }}
+
+  
